@@ -1,0 +1,42 @@
+.bg {
+    background: url("../img/hero-bg-back.jpg");
+    background-position: center right;
+    background-size: contain;
+    background-attachment: fixed;
+}
+#main {
+    padding: 120px 0;
+}
+.mdb-input-style {
+    margin-bottom: 32px !important;
+}
+.menu {
+    position: fixed;
+    width: 100px;
+}
+.fz-14 {
+    font-size: 14px !important;
+}
+.fz-18 {
+    font-size: 18px;
+}
+.mselect .select-dropdown {
+    margin-bottom: 0 !important;
+}
+table.dataTable thead .sorting::after, table.dataTable thead .sorting_asc::after, table.dataTable thead .sorting_asc_disabled::after, table.dataTable thead .sorting_desc::after, table.dataTable thead .sorting_desc_disabled::after {
+    bottom: 11px !important;
+}
+table.dataTable thead .sorting::before, table.dataTable thead .sorting_asc::before, table.dataTable thead .sorting_asc_disabled::before, table.dataTable thead .sorting_desc::before, table.dataTable thead .sorting_desc_disabled::before {
+    bottom: 17px !important;
+}
+.select-icon .select-wrapper,
+.select-icon label
+{
+    padding-left: 32px;
+}
+.loader {
+    display: none;
+}
+.fz-24 {
+    font-size: 20px !important;
+}

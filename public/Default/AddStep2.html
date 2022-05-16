@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Material Design Bootstrap</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="css/addons/datatables-select.min.css" rel="stylesheet">
+	<link href="css/addons/datatables.min.css" rel="stylesheet">
+	<link href="css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.1.0/css/line-awesome.min.css">
+	<!-- Your custom styles (optional) -->
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg">
+
+<section id="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-1 col-sm-12">
+				<div class="menu">
+					<a href="#"
+					   data-toggle="tooltip"
+					   data-placement="right"
+					   title="Инженера"
+					   class="material-tooltip-main mt-0 btn-floating btn-lg btn-success">
+						<i class="fas fa-user-plus"></i>
+					</a>
+					<a data-toggle="tooltip"
+					   data-placement="right"
+					   title="Сделать выдачу"
+					   href="#"
+					   class="material-tooltip-main btn-floating btn-lg btn-success">
+						<i class="fas fa-plus"></i>
+					</a>
+					<a data-toggle="tooltip"
+					   data-placement="right"
+					   title="Выгрузка"
+					   href="#"
+					   class="material-tooltip-main btn-floating btn-lg btn-success">
+						<i class="fas fa-arrow-down"></i>
+					</a>
+				</div>
+				<!-- /.menu -->
+			</div>
+			<!-- /.col-lg-2 col-sm-12 -->
+			<div class="col-lg-10 col-sm-12 mx-auto">
+				<div class="card z-depth-5">
+					<div class="card-header bg-white d-flex align-items-center">
+						<h5 class="mb-0 mr-3">Оборудование</h5>
+					</div>
+					<div class="card-body mselect">
+
+						<form action="" method="post">
+							<div class="row">
+								<div class="col-lg-6 col-sm-12 md-form mb-0">
+
+									<select class="mdb-select" name="type" data-placeholder="Please select a country">
+										<option value="pc">Системный блок</option>
+										<option value="">Ноутбук</option>
+										<option value="">Монитор</option>
+										<option value="">МФУ/Принтер</option>
+										<option value="">Планшет</option>
+										<option value="">Периферия</option>
+									</select>
+									<label class="mdb-main-label fz-14 ml-3 mb-0">Тип оборудования</label>
+
+								</div>
+								<!-- /.col-lg-6 col-sm-12 -->
+							</div>
+							<!-- /.row -->
+							<div class="md-form form-sm">
+								<input type="text" id="serial" name="serial" class="form-control form-control-sm col-lg-6 col-sm-12">
+								<label for="serial">Серийный номер</label>
+							</div>
+							<div class="md-form form-sm">
+								<input type="text" id="inventar" class="form-control col-lg-6 col-sm-12">
+								<label for="inventar">Инвентарный номер</label>
+							</div>
+							<div class="md-form form-sm">
+								<input type="text" id="name" class="form-control col-lg-6 col-sm-12">
+								<label for="name">Название/Модель</label>
+							</div>
+							<!-- Material checked -->
+							<div class="form-check pl-0">
+								<input type="checkbox" class="form-check-input" id="mouse">
+								<label class="form-check-label" for="mouse">Мышь</label>
+							</div>
+							<!-- Material checked -->
+							<div class="form-check pl-0">
+								<input type="checkbox" class="form-check-input" id="board">
+								<label class="form-check-label" for="board">Клавиатура</label>
+							</div>
+							<!-- Material checked -->
+							<div class="form-check pl-0">
+								<input type="checkbox" class="form-check-input" id="kvm">
+								<label class="form-check-label" for="kvm">КВМ переключатель</label>
+							</div>
+							<!-- Material checked -->
+							<div class="form-check pl-0">
+								<input type="checkbox" class="form-check-input" id="garnitura">
+								<label class="form-check-label" for="garnitura">Гарнитура</label>
+							</div>
+							<div class="form-check pl-0">
+								<input type="checkbox" class="form-check-input" id="camera">
+								<label class="form-check-label" for="camera">Web-камера</label>
+							</div>
+							<div class="form-check pl-0">
+								<input type="checkbox" class="form-check-input" id="charge">
+								<label class="form-check-label" for="charge">Кабель USB для ЗУ</label>
+							</div>
+							<div class="form-check pl-0">
+								<input type="checkbox" class="form-check-input" id="charge_block">
+								<label class="form-check-label" for="charge_block">Блок питания для ЗУ</label>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-6">
+									<hr>
+								</div>
+								<!-- /.col-sm-6 -->
+							</div>
+							<!-- /.row -->
+
+							<!-- Material unchecked disabled -->
+							<div class="form-check pl-0">
+								<input type="radio" value="distroy" class="form-check-input" id="distroy" name="action">
+								<label class="form-check-label" for="distroy">Изъятие</label>
+							</div>
+							<!-- Material checked disabled -->
+							<div class="form-check pl-0 mb-3">
+								<input type="radio" checked value="new" class="form-check-input" id="new" name="action">
+								<label class="form-check-label" for="new">Выдача</label>
+							</div>
+							<button type="button" class="btn btn-primary add-row">Добавить в список</button>
+						</form>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<h5 class="card-title mt-4">Выбранное оборудование</h5>
+								<hr>
+								<table class="table">
+									<thead>
+									<tr>
+										<th scope="col">Тип оборудования</th>
+										<th scope="col">Серийный №</th>
+										<th scope="col">Инвентарный №</th>
+										<th scope="col">Название</th>
+										<th scope="col"></th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<th scope="row">Системный блок</th>
+										<td>DTVPUER205823021C59600</td>
+										<td>604520000117225</td>
+										<td>Acer Veriton x2640g</td>
+										<td><span class="badge badge-pill badge-primary">Выдача</span></td>
+										<td>
+											<a class="text-danger p-1 fz-18 material-tooltip-main"
+											   data-toggle="tooltip"
+											   data-placement="top"
+											   title="Удалить из списка"
+											><i class="fas fa-times"></i></a>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+								<button type="button" class="btn-amber btn">Сохранить/Закрыть</button>
+							</div>
+							<!-- /.col-sm-12 -->
+						</div>
+						<!-- /.row -->
+
+					</div>
+				</div>
+			</div>
+			<!-- /.col-lg-10 col-sm-12 ml-auto -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /#main -->
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script src="js/addons/datatables.min.js" rel="stylesheet"></script>
+<!-- DataTables Select JS -->
+<script src="js/addons/datatables-select.min.js" rel="stylesheet"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- MDBootstrap Datatables  -->
+<script src="js/inputmask/jquery.inputmask.bundle.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

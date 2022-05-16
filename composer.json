@@ -1,0 +1,14 @@
+{
+  "autoload": {
+    "psr-4": {
+      "cube\\": "vendor/cube/core",
+      "app\\" : "app"
+    },
+    "require": {}
+  },
+  "require": {
+    "gabordemooij/redbean": "v5.3.1",
+    "phpoffice/phpexcel": "^1.8",
+    "phpoffice/phpspreadsheet": "^1.8"
+  }
+}
